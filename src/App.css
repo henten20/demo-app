@@ -1,38 +1,61 @@
-.App {
+/* Eliminate innate margin in dx-viewport */
+.dx-theme-generic-typography {
+  margin: 0
+}
+
+/* .app {
   text-align: center;
-}
+} */
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app-header {
+  background-color: #4e4e4e;
+  height: 70px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  color: #ddd;
+  padding-top: 12px;
+  padding-bottom: 5px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-bottom: 1px solid rgb(126, 126, 126);
 }
 
-.App-link {
-  color: #61dafb;
+.app-body {
+  margin: 50px;
+  /* padding: 100px; */
+  padding-left: 15%;
+  padding-right: 15%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.logo {
+  padding-right: 50px;
+}
+
+.page-title {
+  font-size: xx-large;
+  padding-bottom: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Helvetica", sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 15px;
+  margin: 10px auto;
+}
+
+.csv-input {
+  padding: 10px;
+  display: block;
+  margin: 15px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.container p {
+  padding-top: 10px;
+  color: #666;
 }
