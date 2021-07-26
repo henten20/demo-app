@@ -10,6 +10,7 @@ import ParsePage from './main/ParsePage';
 
 import './App.css';
 import 'devextreme/dist/css/dx.dark.css';
+import Footer from './Footer';
 
 function App() {
 	return (
@@ -27,7 +28,7 @@ function App() {
 				</BrowserRouter>
 			</div>
 			<div className={'app-footer'}>
-
+				<Footer/>
 			</div>
 		</div>
 	);

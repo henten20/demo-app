@@ -18,8 +18,9 @@ function EnrollmentPage() {
      * @param {*} data upload CSV data in a nested array format
      */
     function handleLoad(data) {
-        // remove the header row
+        // remove the header row and ilter out empty spaces
         data.splice(0, 1);
+        data = data.filter(s => s.length == 4);
 
         fetch('http://localhost:8080/enroll', {
             method: 'POST',
