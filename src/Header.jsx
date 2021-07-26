@@ -4,7 +4,8 @@ import 'whatwg-fetch';
 
 const menuOptions = [{
     id: 0,
-    name: 'Home'
+    name: 'Home',
+    onClick: () => alert("Home page is not available at this time.")
 }, {
     id: 1,
     name: 'User Registration',
